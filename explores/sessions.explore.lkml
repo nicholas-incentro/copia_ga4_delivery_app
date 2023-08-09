@@ -3,7 +3,7 @@ include: "/views/*/*.view.lkml"
 include: "/attributes/*.lkml"
 
 explore: sessions {
-  label: "GA4 Sessions"
+  label: "GA4 Delivery App Sessions"
   description: "Explores Google Analytics sessions data."
 
   join: audience_cohorts {

@@ -1,6 +1,6 @@
-connection: "@{GA4_CONNECTION}"
+connection: "delivery_app"
 
-label: "Google Analytics 4"
+label: "Delivery App Google Analytics 4"
 
 include: "/dashboards/*.dashboard"
 include: "/explores/**/*.explore.lkml"

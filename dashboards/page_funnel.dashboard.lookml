@@ -1,12 +1,12 @@
 
 - dashboard: ga4_page_funnel
-  title: "[GA4] Page Funnel"
+  title: "[GA4] Delivery App Page Funnel"
   layout: newspaper
   preferred_viewer: dashboards-next
   elements:
   - title: Page Funnel
     name: Page Funnel
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     type: looker_column
     fields: [sessions.audience_trait, sessions.count_of_page_1, sessions.count_of_page_2,
@@ -64,7 +64,7 @@
     title_text: ''
     subtitle_text: ''
     body_text: "<div  style=\"text-align: center;\">\n\t<div>\n\t\t<h1 style=\"font-size:\
-      \ 28px;\">GA4 Page Pathing Page Funnel</h1><h2 style=\"font-size: 16px;\">How\
+      \ 28px;\">ga4_delivery_app Page Pathing Page Funnel</h1><h2 style=\"font-size: 16px;\">How\
       \ are customers moving through our site?<br><b>Recommended Action</b>\U0001f447\
       Update the filters above to create your own custom path pathing funnel. Then\
       \ link from any page in the funnel to see what actions occur on that page.</h2></div>\n\
@@ -88,7 +88,7 @@
     height: 4
   - title: Page Path Funnel % of Total
     name: Page Path Funnel % of Total
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     type: looker_column
     fields: [sessions.count_of_page_1, sessions.count_of_page_2, sessions.count_of_page_3,
@@ -142,7 +142,7 @@
     height: 8
   - title: Top Page Paths
     name: Top Page Paths
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     type: looker_grid
     fields: [sessions.total_sessions, events.event_param_page, events.current_page_plus_1,
@@ -226,7 +226,7 @@
       type: relative_timeframes
       display: inline
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.session_date
@@ -240,7 +240,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: events.event_param_host
@@ -254,7 +254,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.page_1_filter
@@ -268,7 +268,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.page_2_filter
@@ -282,7 +282,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.page_3_filter
@@ -296,7 +296,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.page_4_filter
@@ -310,7 +310,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.page_5_filter
@@ -324,7 +324,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.page_6_filter
@@ -338,7 +338,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: ga4
+    model: ga4_delivery_app
     explore: sessions
     listens_to_filters: []
     field: sessions.audience_selector
